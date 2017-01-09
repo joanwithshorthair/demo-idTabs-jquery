@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jquery plug-in_onclick tabs</title>
+	<script src="jquery.idTabs.min.js"></script>
+	<script src="jquery-1.6.2.min.js"></script>
+    <style type="text/css">
+		*{
+			margin:0;
+			padding:0px;
+		}
+		body{
+			background:#000;
+			color: #fff;
+		}
+		
+		div#main{/*container设置宽度为500px并在屏幕居中显示*/
+			width:500px;
+			margin:8px auto;
+		}
+		
+		ul{
+			list-style:none;
+			margin-left: 40px;
+		}
+		
+		ul li{
+			float:left;
+		}
+
+		ul li a{
+			display:block;
+			padding: 6px 10px;
+			margin: 1px 1px 0 0;
+			
+			text-decoration:none;
+			color:#fff;
+			background:#444;
+		}
+		
+		ul li a:hover{
+			background: #111;	
+		}
+		
+		ul li a.selected{/*给选中的li不一样的颜色，不设置这个默认li的颜色都一样*/
+			color:#000;
+			background:snow;
+		}
+		
+		#main div{
+			height:300px;
+			clear:left;
+			padding: 10px 10px 8px;
+		
+			color:#111;
+			background:snow;
+			font-weight:bold;
+		}
+    </style>
+	
+	
+</head>
+<body>
+  <div id="main">
+	<ul class="idTabs">
+		<li><a href="#0">Male</a></li>
+		<li><a href="#1">Female</a></li>
+		<li><a href="#2">All</a></li>
+	</ul>
+	<div id="0">
+		<h1>Male workers</h1>
+	</div>
+	<div id="1">
+		<h1>Female workers</h1>
+	</div>
+	<div id="2">
+		<h1>All workers</h1>
+	</div>
+  </div>
+</body>
+</html>
